@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Bola -->
+    <path
+        android:fillColor="#FF6D28"
+        android:pathData="M54,30 A24,24 0 1 1 53.999,30 Z" />
+    <!-- Linhas da bola em tom escuro -->
+    <path
+        android:strokeColor="#0F1720"
+        android:strokeWidth="2.5"
+        android:pathData="M54,30 L54,78" />
+    <path
+        android:strokeColor="#0F1720"
+        android:strokeWidth="2.5"
+        android:pathData="M30,54 L78,54" />
+    <path
+        android:strokeColor="#0F1720"
+        android:strokeWidth="2.5"
+        android:pathData="M36,36 L72,72" />
+    <path
+        android:strokeColor="#0F1720"
+        android:strokeWidth="2.5"
+        android:pathData="M72,36 L36,72" />
+</vector>
