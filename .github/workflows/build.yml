@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -36,3 +36,11 @@ jobs:
           name: basqueteapp-debug-apk
           path: app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
+
+      - name: Publicar APK no Release (latest)
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Última build (debug)
+          body: APK de debug mais recente do BasqueteApp. Baixe o app-debug.apk e instale.
+          files: app/build/outputs/apk/debug/app-debug.apk
